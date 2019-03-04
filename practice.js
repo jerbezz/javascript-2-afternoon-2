@@ -3,7 +3,7 @@
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
 
-  You can refresh the page at any time to re-run all the tests.
+  You can refresh the page at any time to re-run all the tests.  
 */
 
 ////////// PROBLEM 1 //////////
@@ -18,7 +18,9 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+function first(arr){
+  return arr[0]
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -33,7 +35,9 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
+function last(arr){
+  return arr[2]
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -48,7 +52,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family){
+  for(let i = 0; i < family.length; i++){
+    alert(family[i])
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,7 +71,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(letters){
+  for(let i = letters.length - 1; i >= 0; i--){
+    alert(letters[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -78,7 +90,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
+function evenFinder(nums){
+  let evensArray = []
+  for(let i = 0; i < nums.length; i++){
+    if(nums[i] %2 === 0){
+      evensArray.push(nums[i])
+    }
+  }
+  return evensArray
+}
 
 
 
@@ -106,7 +126,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider( numbersArray){
+  let mixedArray = [[],[]]
+  for(i=0;i<numbersArray.length;i++){
+    if(numbersArray[i] %2 === 0){
+      mixedArray[0].push(numbersArray[i])
+    } else {
+      mixedArray[1].push(numbersArray[i])
+    }
+  }
+  return mixedArray;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -127,7 +157,14 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder(array){
+  let randomNumber = getRandomArbitrary();
+  for(i=0;i<array.length;i++){
+    if(array[i] === randomNumber){
+      return true;
+    } 
+  } return false
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -156,6 +193,22 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, item){
+  for(let i = 0; i < myGroceryList.length; i++){
+    if(item === myGroceryList[i]){
+      myGroceryList.splice(myGroceryList[i],1)
+      return myGroceryList
+    } else if(myGroceryList, item){
+      myGroceryList = []
+    }
+  }
+  return myGroceryList
+}
+
+function addItem(myGroceryList,item){
+  myGroceryList.push(item)
+  return myGroceryList
+}
 
 
 
@@ -166,7 +219,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  let createdArray= []
+  for(let i = 1; i <= 215; i++){
+    createdArray.push(i)
+  }
+  return createdArray
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -182,6 +241,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(numbers){
+  let addedTen = []
+  for(i=0;i<numbers.length;i++){
+    addedTen.push(Number(numbers[i]))
+    addedTen[i] += 10
+  }
+  return addedTen
+}
+console.log(addTen(numbers))
 
 
 
@@ -207,7 +275,13 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2){
+  if(arr1.length > arr2.length){
+    return arr1
+  } else{
+    return arr2
+  }
+}
 
 
 /*
@@ -219,7 +293,9 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function both(arr1, arr2){
 
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -259,7 +335,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(tyler, cahlan, ryan, colt)
+console.log(devMountainEmployees)
 
 
 /*
@@ -280,7 +357,7 @@ var colt = {
 */
 
 //Code Here
-
+let users = []
 
 
 /*
